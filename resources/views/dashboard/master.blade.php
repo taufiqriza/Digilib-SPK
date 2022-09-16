@@ -39,7 +39,7 @@
       <div id="content">
 
         <!-- Topbar -->
-        {{-- @include('dashboard.partials.topbar') --}}
+        @include('dashboard.partials.topbar')
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
