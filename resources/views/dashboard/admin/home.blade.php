@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Home</h1>
+    <h1 class="h3 mb-0 text-gray-800">Home </br> <span style="color:#0093FF, font-size:xx-small;" class="small">Selamat Datang Taufiq Riza</span></h1>
   </div>
   <div class="row">
 
@@ -83,6 +83,9 @@
         <div class="col-lg-12">
             <div class="card shadow-sm">
                 <div class="card-header">Dashboard</div>
+                <div>
+                   
+                </div>
 
                 <div class="card-body">
                     @if (session('status'))
