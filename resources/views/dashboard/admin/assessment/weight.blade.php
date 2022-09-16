@@ -1,6 +1,6 @@
 <div class="card border-0 mb-4 mt-2">
     <div class="card-header font-weight-bold text-primary">
-        List Assessment Weight Result
+        List Hasil Pembobotan Kriteria!
     </div>
 
         <div class="card-body">
@@ -10,7 +10,7 @@
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th>Employe Name</th>
+                            <th>Nama Subjek</th>
                             @foreach ($criteria_filtered as $criteria)
                         <th>{{$criteria->criteria_code}}<br>
                         ({{$criteria->name}})</th>

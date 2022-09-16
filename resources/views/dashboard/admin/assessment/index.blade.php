@@ -2,21 +2,21 @@
 
 @section('content')
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Assessment</h1>
-    <a href="{{route('assessment.export')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> SAW Rank</a>
+    <h1 class="h3 mb-0 text-gray-800">Penilaian</h1>
+    <a href="{{route('assessment.export')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Hasil Nilai</a>
   </div>
     <div class="row justify-content-center">
         <div class="col-lg-12">
               <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#home">Assessment</a>
+                <a class="nav-link active" data-toggle="tab" href="#home">Penilaian</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#menu1">Assessment Weight</a>
+                <a class="nav-link" data-toggle="tab" href="#menu1">Bobot Penilaian</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#menu2">Result</a>
+                <a class="nav-link" data-toggle="tab" href="#menu2">Hasil</a>
                 </li>
             </ul>
             <div class="tab-content shadow-sm">

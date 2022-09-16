@@ -9,13 +9,13 @@
                 <table class="table table-bordered" border="1" id="weight" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Rank.</th>
-                            <th>Employe Name</th>
+                            <th>Ranking*</th>
+                            <th>Nama Subjek</th>
                             @foreach ($criteria_filtered as $criteria)
                         <th>{{$criteria->criteria_code}}<br>
                         ({{$criteria->name}})</th>
                             @endforeach
-                            <th>Score</th>
+                            <th>Skor</th>
                         </tr>
                     </thead>
                     <tbody>

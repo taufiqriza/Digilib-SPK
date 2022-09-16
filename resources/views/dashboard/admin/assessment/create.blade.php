@@ -1,6 +1,6 @@
 <div class="card border-0 mb-4 mt-2">
-    <div class="card-header font-weight-bold text-primary">List Assessment
-        <a href="{{route('employe.create')}}" class="btn btn-sm btn-primary float-right"><i class="fas fa-plus-square"></i> New Employe</a></a>
+    <div class="card-header font-weight-bold text-primary">List Pembobotan <span style="color:red;" class="small">*per bulan</span>
+        <a href="{{route('employe.create')}}" class="btn btn-sm btn-primary float-right"><i class="fas fa-plus-square"></i> Tambah Subjek</a></a>
         </div>
 
         <div class="card-body">
@@ -10,7 +10,7 @@
                     <thead>
                         <tr>
                             <th>No.</th>
-                            <th>Employe Name</th>
+                            <th>Nama Subjek</th>
                             @foreach ($criterias as $criteria)
                         <th>{{$criteria->criteria_code}}<br>
                         ({{$criteria->name}})</th>
@@ -30,7 +30,7 @@
                             <td>
                             <input type="hidden" name="criteria_id[]" value="{{$criteria->id}}">
                                     <select name="weight[]" class="form-controll" required>
-                                        <option selected disabled>--Choose--</option>
+                                        <option selected disabled>--Pilih--</option>
                                         @foreach ($criteria->sub_criteria as $sub_criteria)
                                         
                                         <option value="{{$sub_criteria->weight}}"
@@ -46,7 +46,7 @@
                                 </td>
                             @endforeach
                                 <td>
-                                    <button type="submit" class="btn btn-primary">Save</button>
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
                                     
                                 </td>
                             </form>
