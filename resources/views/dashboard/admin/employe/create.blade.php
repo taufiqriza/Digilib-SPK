@@ -2,12 +2,12 @@
 
 @section('content')
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Employe</h1>
+    <h1 class="h3 mb-0 text-gray-800">E-DDC</h1>
   </div>
     <div class="row justify-content-center">
         <div class="col-lg-8">
             <div class="card shadow-sm mb-4">
-                <div class="card-header font-weight-bold text-primary">New Employe
+                <div class="card-header font-weight-bold text-primary">Tambah Subjek
                 </div>
 
                 <div class="card-body">
@@ -15,7 +15,7 @@
                         <form action="{{route('employe.store')}}" method="POST">
                             @csrf
                                 <div class="form-group">
-                                  <label for="full_name">Full Name</label>
+                                  <label for="full_name">Name Subjek</label>
                                   <input type="text" name="full_name" class="form-control" id="full_name" aria-describedby="full_nameHelp">
                                 </div>
                                 <div class="form-group">
