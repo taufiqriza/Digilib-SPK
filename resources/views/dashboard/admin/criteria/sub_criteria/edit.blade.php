@@ -18,9 +18,9 @@
                     </div>
                     <div class="form-group">
                       <label for="weight">Bobot</label>
-                      <input type="number" min="1" max="5" name="weight" class="form-control" id="weight" aria-describedby="weightHelp" placeholder="Min 1, Max 5" value="{{$sub_criteria->weight}}">
+                      <input type="number" min="1" max="100" name="weight" class="form-control" id="weight" aria-describedby="weightHelp" placeholder="Input Bobot" value="{{$sub_criteria->weight}}">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submitt</button>
                   </form>
                 </div>
             </div>
