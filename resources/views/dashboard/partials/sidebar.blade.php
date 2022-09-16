@@ -41,6 +41,20 @@
         <i class="fas fa-drafting-compass"></i>
         <span>Penilaian</span></a>
     </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="">
+        <i class="fas fa-swatchbook"></i>
+        <span>E-Books</span> </span>
+            <span class="sidebar-badge badge badge-warning">Proses</span></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="">
+        <i class="fas fa-hdd"></i>
+        <span>Audit Katalog</span> </span>
+            <span class="sidebar-badge badge badge-warning">Proses</span></a>
+    </li>
     <hr class="sidebar-divider my-0">
 
     <li class="nav-item">
