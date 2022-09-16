@@ -34,7 +34,7 @@ class AssessmentController extends Controller
             'weight'=>['required']
         ]);
             if (count(Criteria::get())!=count($request->weight)) {
-                return redirect()->route('assessment')->withErrors('Please Choose All Criteria Weight');
+                return redirect()->route('assessment')->withErrors('Silahkan Pilih Semua Kriteria Bobot!');
             }
         $arr=[];
         foreach($request['criteria_id'] as $index => $criteria_id){

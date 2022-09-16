@@ -19,26 +19,26 @@
                                   <input type="text" name="full_name" class="form-control" id="full_name" aria-describedby="full_nameHelp">
                                 </div>
                                 <div class="form-group">
-                                  <label for="gender">Gender</label>
+                                  <label for="gender">Favorit</label>
                                   <select name="gender" class="form-control" id="gender">
-                                    <option value='Male'>Male</option>
-                                    <option value='Female'>Female</option>
+                                    <option value='Male'>Banyak</option>
+                                    <option value='Female'>Sedikit</option>
                                   </select>
                                 </div>
                                 <div class="form-group">
-                                  <label for="birth_place">Place Of Birth</label>
+                                  <label for="birth_place">Kampus</label>
                                   <input type="text" name="birth_place" class="form-control" id="birth_place" aria-describedby="birth_placeHelp">
                                 </div>
                                 <div class="form-group">
-                                    <label for="birth_date">Date Of Birth</label>
+                                    <label for="birth_date">Data Input</label>
                                     <input type="date" name="birth_date" class="form-control" id="birth_date" aria-describedby="birth_dateHelp">
                                 </div>
                                 <div class="form-group">
-                                    <label for="address">Address</label>
+                                    <label for="address">Jenis</label>
                                     <textarea name="address" class="form-control" id="address" aria-describedby="addressHelp"></textarea>
                                 </div>
                                 <div class="form-group">
-                                <label for="position">Position</label>
+                                <label for="position">Lokasi</label>
                                 <input type="text" name="position" class="form-control" id="position" aria-describedby="positionHelp">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>

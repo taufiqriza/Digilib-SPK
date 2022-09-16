@@ -15,7 +15,7 @@ class EmployeController extends Controller
     public function destroy($id){
         $employe = Employe::findOrFail($id);
         $employe->delete();
-        return redirect()->route('employe')->withSuccess('Delete Employe Success');
+        return redirect()->route('employe')->withSuccess('Sukses Menghapus Data E-DDC!');
     }
     public function create(){
         return view('dashboard.admin.employe.create');
@@ -26,10 +26,10 @@ class EmployeController extends Controller
             $employe = Employe::create($this->field());
             
         } catch (\Throwable $th) {
-            return redirect()->route('employe.create')->withErrors('Add New Employe Failed');
+            return redirect()->route('employe.create')->withErrors('Gagal Menambahkan Data E-DDC!');
             
         }
-        return redirect()->route('employe')->withSuccess('Add New Employe Success');
+        return redirect()->route('employe')->withSuccess('Sukses Menambahkan Data E-DDC!');
     }
 
     public function edit($id){
@@ -44,10 +44,10 @@ class EmployeController extends Controller
             $employe->update($this->field());
             
         } catch (\Throwable $th) {
-            return redirect()->route('employe.create')->withErrors('Add New Employe Failed');
+            return redirect()->route('employe.create')->withErrors('Gagal Menambahkan Data E-DDC!');
             
         }
-        return redirect()->route('employe')->withSuccess('Add New Employe Success');
+        return redirect()->route('employe')->withSuccess('Sukses Menambahkan Data E-DDC!');
     }
 
     public function validation(){

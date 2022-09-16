@@ -17,7 +17,7 @@ class CriteriaController extends Controller
     public function destroy(Criteria $criteria){
         $criteria->delete();
         
-        return redirect()->route('criteria')->withSuccess('Delete Criteria Success');
+        return redirect()->route('criteria')->withSuccess('Sukses Menghapus Data Kriteria!');
     }
     public function store(Request $request){
         request()->validate([
@@ -32,7 +32,7 @@ class CriteriaController extends Controller
             'type'=>request('type'),
             'weight'=>request('weight')
         ]);
-        return redirect()->route('criteria')->withSuccess('Add New Criteria Success');
+        return redirect()->route('criteria')->withSuccess('Kriteria Baru Berhasil Ditambhkan');
     }
     public function edit($id){
         $criteria = Criteria::findOrFail($id);
@@ -47,7 +47,7 @@ class CriteriaController extends Controller
                 'type'=>request('type'),
                 'weight'=>request('weight')
             ]);
-            return redirect()->route('criteria')->withSuccess('Edit Criteria Success');
+            return redirect()->route('criteria')->withSuccess('Edit Kriteria Sukses');
     }
     public function show($id){
         $criteria = Criteria::findOrFail($id);

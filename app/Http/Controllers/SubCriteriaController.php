@@ -17,11 +17,11 @@ class SubCriteriaController extends Controller
             'name'=>request('name'),
             'weight'=>request('weight')
         ]);
-        return redirect()->route('criteria.show',['id'=>request('criteria_id')])->withSuccess('Add New Sub Criteria Success');
+        return redirect()->route('criteria.show',['id'=>request('criteria_id')])->withSuccess('Sub Kriteria Baru Berhasil Ditambhkan');
     }
     public function destroy(SubCriteria $sub_criteria,Request $request){
         $sub_criteria->delete();
-        return redirect()->route('criteria.show',['id'=>request('criteria_id')])->withSuccess('Delete Sub Criteria Success');
+        return redirect()->route('criteria.show',['id'=>request('criteria_id')])->withSuccess('Sub Kriteria Berhasil Dihapus!');
     }
     public function edit($id){
         $sub_criteria = SubCriteria::findOrFail($id);
@@ -33,6 +33,6 @@ class SubCriteriaController extends Controller
             'name'=>request('name'),
             'weight'=>request('weight')
         ]);
-        return redirect()->route('criteria.show',['id'=>request('criteria_id')])->withSuccess('Edit Sub Criteria Success');
+        return redirect()->route('criteria.show',['id'=>request('criteria_id')])->withSuccess('Berhasil Mengubah Sub Kriteria');
     }
 }
